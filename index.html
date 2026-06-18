@@ -1,133 +1,51 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcards de Acessibilidade</title>
-    <style>
-        /* Configuração Geral da Página */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            height: 100vh;
-            margin: 0;
-            flex-wrap: wrap;
-        }
+## 🗂️ Flashcards sobre Doenças Visuais e Acessibilidade
 
-        /* Estrutura do Flashcard */
-        .flashcard {
-            background-color: transparent;
-            width: 300px;
-            height: 200px;
-            perspective: 1000px; /* Efeito 3D */
-            cursor: pointer;
-        }
+---
 
-        /* Container Interno para Rotação */
-        .card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-        }
+### 👁️ Flashcard 1: Daltonismo
+<table border="0" width="100%">
+  <tr>
+    <td bgcolor="#0d1117" align="center" style="padding: 20px; border-radius: 6px 6px 0 0;">
+      <font color="#58a6ff"><b>FRENTE DO CARD</b></font>
+      <p><font color="#ffffff">O que é o <b>Daltonismo</b> (discromatopsia) e qual o principal cuidado que um desenvolvedor deve ter na web?</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#161b22" style="padding: 15px; border-radius: 0 0 6px 6px;">
+      <details>
+        <summary><b>👉 Clique aqui para ver o Verso (Resposta)</b></summary>
+        <br>
+        <ul>
+          <li><font color="#c9d1d9"><b>Definição:</b> É a incapacidade ou dificuldade de distinguir certas cores, afetando principalmente a percepção de tons como verde e vermelho.</font></li>
+          <li><font color="#c9d1d9"><b>Regra de Ouro:</b> Nunca transmita informações importantes <b>apenas por meio de cores</b>. Se um campo de formulário der erro, use texto explícito e ícones além da cor vermelha.</font></li>
+          <li><font color="#c9d1d9"><b>Contraste:</b> Certifique-se de que a diferença de luminosidade entre o texto e o fundo siga as diretrizes de contraste da WCAG.</font></li>
+        </ul>
+      </details>
+    </td>
+  </tr>
+</table>
 
-        /* Efeito de Virar ao Passar o Mouse */
-        .flashcard:hover .card-inner,
-        .flashcard:focus-within .card-inner {
-            transform: rotateY(180deg);
-        }
+---
 
-        /* Faces da Frente e do Verso */
-        .card-front, .card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden; /* Esconde a face oposta */
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        /* Design da Frente */
-        .card-front {
-            background-color: #24292e; /* Cor padrão do tema escuro do GitHub */
-            color: #ffffff;
-        }
-
-        /* Design do Verso */
-        .card-back {
-            background-color: #ffffff;
-            color: #24292e;
-            transform: rotateY(180deg);
-            border: 2px solid #24292e;
-        }
-
-        /* Textos */
-        h3 {
-            margin: 0 0 10px 0;
-            font-size: 1.2rem;
-        }
-
-        p, ul {
-            font-size: 0.95rem;
-            margin: 0;
-            padding: 0;
-            text-align: left;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 5px;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Flashcard 1: O que é a11y -->
-    <div class="flashcard" tabindex="0" aria-label="Flashcard 1: Significado de a11y. Passe o mouse ou foque para ver a resposta.">
-        <div class="card-inner">
-            <div class="card-front">
-                <h3>Flashcard 1</h3>
-                <p>O que significa o termo "a11y" e qual é o seu objetivo principal?</p>
-            </div>
-            <div class="card-back">
-                <h3>Resposta</h3>
-                <p>É o numerônimo para <b>Accessibility</b> (A + 11 letras + Y). O objetivo é garantir que a web seja utilizável por qualquer pessoa.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Flashcard 2: Atributo alt -->
-    <div class="flashcard" tabindex="0" aria-label="Flashcard 2: Atributo alt em imagens. Passe o mouse ou foque para ver a resposta.">
-        <div class="card-inner">
-            <div class="card-front">
-                <h3>Flashcard 2</h3>
-                <p>Por que toda imagem em HTML precisa do atributo alt, mesmo que vazio?</p>
-            </div>
-            <div class="card-back">
-                <h3>Resposta</h3>
-                <ul>
-                    <li>Para leitores de tela de usuários cegos.</li>
-                    <li>Como texto alternativo caso a imagem falhe.</li>
-                    <li>Identificar imagens puramente decorativas (alt="").</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-</body>
-</html>
+### 👁️ Flashcard 2: Baixa Visão e Glaucoma
+<table border="0" width="100%">
+  <tr>
+    <td bgcolor="#0d1117" align="center" style="padding: 20px; border-radius: 6px 6px 0 0;">
+      <font color="#58a6ff"><b>FRENTE DO CARD</b></font>
+      <p><font color="#ffffff">Como condições como o <b>Glaucoma</b> afetam a navegação e qual recurso técnico resolve essa barreira?</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#161b22" style="padding: 15px; border-radius: 0 0 6px 6px;">
+      <details>
+        <summary><b>👉 Clique aqui para ver o Verso (Resposta)</b></summary>
+        <br>
+        <ul>
+          <li><font color="#c9d1d9"><b>Definição:</b> O glaucoma causa uma perda progressiva do campo visual periférico (visão de túnel) e redução de contraste, enquadrando-se em quadros de baixa visão.</font></li>
+          <li><font color="#c9d1d9"><b>Navegação:</b> Usuários com essa condição dependem muito do <b>zoom do navegador</b> ou de lupas virtuais para ler o conteúdo digital.</font></li>
+          <li><font color="#c9d1d9"><b>Solução Técnica:</b> Use unidades relativas no CSS (como <code>rem</code> ou <code>em</code>) para fontes e layouts. O site não pode quebrar ou sobrepor textos quando o usuário aplicar zoom de até 200%.</font></li>
+        </ul>
+      </details>
+    </td>
+  </tr>
+</table>
